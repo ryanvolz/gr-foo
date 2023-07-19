@@ -1,3 +1,5 @@
+boost_cpp:
+- 1.78.0
 c_compiler:
 - gcc
 c_compiler_version:
@@ -17,12 +19,14 @@ docker_image:
 gmp:
 - '6'
 gnuradio_core:
-- 3.10.6
+- 3.10.7
 gnuradio_extra_pin:
 - ''
 numpy:
 - '1.21'
 pin_run_as_build:
+  boost-cpp:
+    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -32,8 +36,6 @@ target_platform:
 - linux-ppc64le
 uhd:
 - 4.4.0
-volk:
-- '3.0'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
